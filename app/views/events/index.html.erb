@@ -1,0 +1,38 @@
+
+<div class="container text-center">
+<h3><span class="label label-primary">EVENTS</span></h3><br>
+</div>
+
+    <div class="container">
+      <div class="row">
+        <!--<div class="col-lg-4">-->
+        
+    <% @events.each do |event| %>
+    <div class="col-lg-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+          <%= event.title %>
+          </div>
+          <div class="panel-body">
+            <%= event.description %>
+          </div>
+          <div class="panel-footer">
+            <%= event.city %>, <%= event.dateandtime %>
+          </div>
+        </div>
+        </div>
+        <!--
+        <td><%= link_to 'Show', event %></td>
+        <td><%= link_to 'Edit', edit_event_path(event) %></td>
+        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>-->
+    <% end %>
+    
+        
+      </div>
+    </div>
+
+
+<br>
+
+

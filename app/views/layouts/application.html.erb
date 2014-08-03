@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hackathons & Talks</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/bootstrap.min.css">
+  <!--<style type="text/css">
+   body { background: #808080; }
+  </style>-->
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Hackathons and Tech Events {India}</h1>
+    <p>List of Tech events and Hackathons happening in India. Never miss out a tech event :)</p>
+    <div class="btn-group pull-right">
+    	<%= link_to 'Add New Event', new_event_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>
+<%= yield %>
+<div class="navbar navbar-default navbar-bottom">
+	<div class="container">
+			<p class="navbar-text">Created by Arvind Thangamani</p>
+	</div>
+</div>	
+
+<script type="text/javascript" src="../assets/javascripts/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+
+</body>
+</html>
